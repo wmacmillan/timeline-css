@@ -1718,7 +1718,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #f2f2f2;
+  background-color: #A8DADC;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -1743,7 +1743,7 @@
   margin-left: 80px;
 }
 .tl-timegroup.tl-timegroup-alternate {
-  background-color: #fafafa;
+  background-color: #DCAAA8;
 }
 .tl-timegroup.tl-timegroup-hidden {
   display: none;
