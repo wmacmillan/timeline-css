@@ -12521,7 +12521,7 @@ var TL = (function (t) {
         super(t, e, i),
           (this.iframe = Wt.a.sanitize(this.data.url, {
             ADD_TAGS: ["iframe"],
-            ADD_ATTR: ["frameborder"],
+            ADD_ATTR: ["frameborder", "src"],
           }));
         console.log(this.data.url);
         console.log(this.iframe)
