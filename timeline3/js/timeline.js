@@ -12519,10 +12519,8 @@ var TL = (function (t) {
     class ze extends de {
       constructor(t, e, i) {
         super(t, e, i),
-          (this.iframe = (this.data.url, {
-            ADD_TAGS: ["iframe"],
-            ADD_ATTR: ["frameborder"],
-          }));
+          this.iframe = this.data.url
+          ));
       }
       _loadMedia() {
         (this._el.content_item = this.domCreate(
