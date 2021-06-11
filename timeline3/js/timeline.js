@@ -9869,7 +9869,7 @@ var TL = (function (t) {
       });
     }
     function Yt(t) {
-      return Wt.a.sanitize(t, {{ ADD_TAGS: ["iframe"], ADD_ATTR: ['allow', 'allowfullscreen', 'frameborder', 'scrolling', 'src'] }
+      return Wt.a.sanitize(t, { ADD_TAGS: ["iframe"], ADD_ATTR: ['allow', 'allowfullscreen', 'frameborder', 'scrolling', 'src'] }
       });
     }
     Wt.a.addHook("afterSanitizeAttributes", function (t) {
