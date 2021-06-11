@@ -9871,7 +9871,7 @@ var TL = (function (t) {
     function Yt(t) {
       return Wt.a.sanitize(t, {
         ADD_TAGS: ["iframe"],
-        ADD_ATTR: ["frameborder", "target"],
+        ADD_ATTR: ["frameborder", "target", "src"],
       });
     }
     Wt.a.addHook("afterSanitizeAttributes", function (t) {
@@ -12521,8 +12521,9 @@ var TL = (function (t) {
         super(t, e, i),
           (this.iframe = Wt.a.sanitize(this.data.url, {
             ADD_TAGS: ["iframe"],
-            ADD_ATTR: ["frameborder", "src"],
+            ADD_ATTR: ["src"],
           }));
+        this.iframe = this.data.url;
         console.log(this.data.url);
         console.log(this.iframe)
       }
