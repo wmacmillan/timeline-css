@@ -12519,13 +12519,13 @@ var TL = (function (t) {
     class ze extends de {
       constructor(t, e, i) {
         super(t, e, i),
-          (this.iframe = Wt.a.sanitize(this.data.url, {
-            ADD_TAGS: ["iframe"],
-            ADD_ATTR: ["src"],
-          }));
+          // (this.iframe = Wt.a.sanitize(this.data.url, {
+          //   ADD_TAGS: ["iframe"],
+          //   ADD_ATTR: ["src"],
+          // }));
         this.iframe = this.data.url;
-        console.log(this.data.url);
-        console.log(this.iframe)
+        // console.log(this.data.url);
+        // console.log(this.iframe)
       }
       _loadMedia() {
         (this._el.content_item = this.domCreate(
