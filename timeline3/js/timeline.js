@@ -9869,9 +9869,7 @@ var TL = (function (t) {
       });
     }
     function Yt(t) {
-      return Wt.a.sanitize(t, {
-        ADD_TAGS: ["iframe"],
-        ADD_ATTR: ["frameborder", "target", "src"],
+      return Wt.a.sanitize(t, {{ ADD_TAGS: ["iframe"], ADD_ATTR: ['allow', 'allowfullscreen', 'frameborder', 'scrolling', 'src'] }
       });
     }
     Wt.a.addHook("afterSanitizeAttributes", function (t) {
@@ -12519,13 +12517,10 @@ var TL = (function (t) {
     class ze extends de {
       constructor(t, e, i) {
         super(t, e, i),
-          // (this.iframe = Wt.a.sanitize(this.data.url, {
-          //   ADD_TAGS: ["iframe"],
-          //   ADD_ATTR: ["src"],
-          // }));
-        this.iframe = this.data.url;
-        // console.log(this.data.url);
-        // console.log(this.iframe)
+          (this.iframe = Wt.a.sanitize(this.data.url, {ADD_TAGS: ["iframe"], ADD_ATTR: ['allow', 'allowfullscreen', 'frameborder', 'scrolling','src']
+          }));
+        console.log(this.data.url);
+        console.log(this.iframe)
       }
       _loadMedia() {
         (this._el.content_item = this.domCreate(
