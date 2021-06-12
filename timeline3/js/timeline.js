@@ -12519,7 +12519,8 @@ var TL = (function (t) {
           (this.iframe = Wt.a.sanitize(this.data.url, {ADD_TAGS: ["iframe"], ADD_ATTR: ['allow', 'allowfullscreen', 'frameborder', 'scrolling','src']
           }));
         console.log(this.data.url);
-        console.log(this.iframe)
+        this.iframe = this.data.url;
+        console.log(this.iframe);
       }
       _loadMedia() {
         (this._el.content_item = this.domCreate(
