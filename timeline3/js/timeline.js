@@ -12528,7 +12528,7 @@ var TL = (function (t) {
           "tl-media-item tl-media-iframe",
           this._el.content
         )),
-          (this._el.content_item.innerHTML = this.iframe),
+          (this._el.content_item.innerHTML = this.data.url),
           this.onLoaded();
       }
       _updateMediaDisplay() {
